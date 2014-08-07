@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>test</title>
+	<link rel="shortcut icon" href="favicon.ico" >
+	<link rel="icon" type="image/gif" href="favicon.gif" >
+	<link href="./css/common.css" rel="stylesheet" media="screen">
+	<script type="text/javascript" src="./js/jquery.latest.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/SimpleAjaxUploader.js"></script>
+</head>
+<body>
+	<div class="container">
+		<!-- newsfeed start -->
+		<div id="poster"><textarea id="poster_textarea"></textarea>
+		<input type="submit" class="btn btn-primary btn-large" value="发布"/>
+		<div id="poster_plugin"><a href="javascript:void(0)"  id="upload-btn" ><i class="icon-picture"></i>插入图片</a><a href="javascript:void(0)"><i class="icon-film"></i>添加视频</a></div>
+		<div id="poster_media" class="row"><div id="picBox" class="span3"></div><div class="cancel_btn span2"></div>		
+		</div>
+		<div id="errBox" class="alert alert-error"></div>
+		</div>
+		<div class='newsfeed'>
+			<div class="one_feed row-fluid">
+				<div class="feedicon span2 row-fluid">
+					<div class="feed_icon offset2 span8"><a href="baidu"><img class="img-polaroid" src="http://fortyer.com/image/ico/user_ico/avatar.png"></a></div>
+					<div class="feed_nipple span2"></div>
+				</div>
+				<div class="feed_content span9">
+					<strong class="feed_author"><a href="baidu.com">@美剧迷</a></strong>
+					<p>【《华尔街日报》被举报在华行贿】《华尔街日报》于当地时间本月17日称，报社员工因涉嫌向中国政府有关人士行贿以换取新闻线索，成为美国司法部的调查对象。不过，此前报社内部调查并未确认贿赂一事是否属实。而举报也不排除是中方为牵制华尔街日报采访而作出的行为……详见长微博</p>
+					<div class="feed_img_bg">
+						<img class="feed_img_big" src="http://ww1.sinaimg.cn/bmiddle/97132be3jw1e2qvchtb35j.jpg"/>
+					</div>
+					<div class="news_status row-fluid">
+						<div class="span3">0分钟前</div>
+						<div class="span7 offset2">
+						<span class="share_ico"><i class="icon-retweet"></i>转发(0)</span>
+						<span class="save_ico"><i class="icon-heart"></i>收藏(0)</span>
+						<span class="comm_ico"><i class="icon-comment"></i>评论(0)</span>
+						</div>
+					</div>
+					<div class="feed_comments"> 
+						<div class="feed_comment_input">
+							<textarea class="feed_comment_textarea"></textarea>					
+			            	<input type="checkbox" class="checkbox" value=""/>
+							<span class="feed_comment_btn btn btn-large btn-primary"> 回复 </span>
+						</div>
+						<div class="feed_comment_main">
+						<div class="feed_comments">	
+						<div class="one_feed_comment row-fluid">
+							<div class="one_feed_comment_ico span1">
+								<img src="http://fortyer.com/image/ico/user_ico_24/avatar.png">
+							</div>
+							<div class="one_feed_comment_content span10"><a href="hdsaffa">王二麻子</a>：谢谢视频部同事的制作。搭配甚好，这是一个严肃议题，不针对人，只针对事，我们需要怎样的共享出彩模式？共享出彩和共同富裕有什么区别？个体幸福与集体主义有何关联与内在矛盾？</div>
+						</div>
+						<hr>
+						<div class="one_feed_comment row-fluid">
+							<div class="one_feed_comment_ico span1">
+								<img src="http://fortyer.com/image/ico/user_ico_24/avatar.png">
+							</div>
+							<div class="one_feed_comment_content span10"><a href="hdsaffa">王二麻子</a>回复<a href="hdsaffa">王二麻子</a>：谢谢视频部同事的制作。搭配甚好，这是一个严肃议题，不针对人，只针对事，我们需要怎样的共享出彩模式？共享出彩和共同富裕有什么区别？个体幸福与集体主义有何关联与内在矛盾？</div>
+						</div>
+						</hr>
+						</div>
+						<div class="feed_more_comment"><span class="fui-bubble-24"></span> <a href="http://baidu.com">查看更多评论</a></div>
+						<div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="one_feed row-fluid">
+				<div class="feedicon span2 row-fluid">
+					<div class="feed_icon offset2 span8"><a href="baidu"><img class="img-polaroid" src="http://fortyer.com/image/ico/user_ico/avatar.png"></a></div>
+					<div class="feed_nipple span2"></div>
+				</div>
+				<div class="feed_content span9">
+					<strong class="feed_author"><a href="baidu.com">美剧迷</a></strong>
+					<p>转发微博</p>
+					<div class="arrow-top"></div>
+					<div class="feed_repost">
+						<strong class="feed_repost_author"><a href="baidu.com">美剧迷</a></strong>
+						<p class="feed_repost_content">Mac下安装Yaf, 因为默认没有装pcre库所以不成功, 如果装了brew则很简单, brew install pcre, 然后 pecl install yaf 就一切okey了, 有俩个test fail, 不过也是因为语法解析器报错不同导致的, 可以忽略.</p>
+						<div class="feed_img_bg">
+						<img class='feed_repost_img_small' src='http://ww3.sinaimg.cn/thumbnail/626ece26gw1e2vyaqol70j.jpg'/>
+						</div>
+						<div class="news_status row-fluid">
+							<div class="span3">0分钟前</div>
+							<div class="span7 offset2">
+							<span class="share_ico"><i class="icon-retweet icon-white"></i>转发(0)</span>
+							<span class="save_ico"><i class="icon-heart icon-white"></i>收藏(0)</span>
+							<span class="comm_ico"><i class="icon-comment icon-white"></i>评论(0)</span>
+							</div>
+						</div>
+					</div>
+					<div class="news_status row-fluid">
+						<div class="span3">0分钟前</div>
+						<div class="span7 offset2">
+						<span class="share_ico"><i class="icon-retweet"></i>转发(0)</span>
+						<span class="save_ico"><i class="icon-heart"></i>收藏(0)</span>
+						<span class="comm_ico"><i class="icon-comment"></i>评论(0)</span>
+						</div>
+					</div>
+		<div class="feed_comments"> 
+						<div class="feed_comment_input">
+							<textarea class="feed_comment_textarea"></textarea>
+														<input type="checkbox" class="feed_comm_checkbox" data-toggle="tooltip" title="" value="" data-original-title="作为对推文的翻译">						
+							<span class="feed_comment_btn btn btn-large btn-primary"> 回复 </span>
+							<input type="hidden" value="" class="to_user_id">
+							<input type="hidden" value="" class="to_user_name">
+							<input type="hidden" value="" class="to_user_wuid">
+													</div>
+						</div>
+			</div>
+		</div>
+
+		<div class="feed_loading"><img src="./img/loading-small.gif"></div>
+	</div>
+		<!-- newsfeed end-->
+    </div>
+    <script>
+    var uploader = new ss.SimpleUpload({
+	button: 'upload-btn', // HTML element used as upload button
+	url: '/uploader.php', // URL of server-side upload handler
+	name: 'uploadfile' ,// Parameter name of the uploaded file
+	onSubmit: function(file, ext) {
+		ext = ext.toLowerCase();
+		if (ext !== 'png' && ext !== 'jpg' && ext !== 'jpeg' && ext !== 'gif') {
+	  			$("#errBox").html ('图片格式错误. 请选择 PNG, JPG, GIF 格式');
+	  			$("#errBox").show();
+				return false;
+		}
+		$("#errBox").html("");
+		$("#errBox").hide();
+	},
+	startXHR: function(filename, size) {
+		$("#picBox").html("<img src='/img/loading_simple.gif'/>");
+		if (size >= 500) {
+			$("#errBox").html('图片应小于 500K');
+			$("#errBox").show();
+			return false;
+		}
+	},
+	onComplete:	function(file, response) {
+		if ($.parseJSON(response).success === true) {
+  			$("#picBox").html('<img src="/upload/'+file+'">');
+  			$("#picBox").next(".cancel_btn").show();
+		} else {
+			$("#errBox").html(response.msg);
+  			$("#errBox").show();
+		}
+		$("#poster_plugin").hide();
+	}
+	});
+	$(".cancel_btn").click(function(){
+		$("#picBox").html("");
+		$(this).hide();
+		$("#poster_plugin").fadeIn('fast');
+	});
+	</script>
+</body>
+</html>

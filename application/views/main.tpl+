@@ -1,0 +1,63 @@
+{{include file='head.tpl'}}
+<div class="container">
+{{include file='nav.tpl'}}
+<div class="space_div_2"></div>
+<div class="row">
+		<div class='span3'>
+		<div  id="main_panel">
+		<p data-id="getFeed" class="main_panel_active main_panel_top"><i class="icon-home icon-white"></i>主页<i class="icon-circle"></i></p>
+		<p data-id="getFollow"><i class="icon-list-alt icon-white"></i>关注的人（<span id="main_follow_count">{{$user.follow_count_b}}</span>）<i class="icon-circle"></i></p>
+		<p data-id="rt"><i class="icon-retweet icon-white"></i>转发<i class="icon-circle"></i></p>
+<!--		<p data-id="tranlate"><i class="icon-bookmark icon-white"></i>翻译（{{$user.translate_count}}）<i class="icon-circle"></i></p> -->
+		<p data-id="comment"><i class="icon-comment icon-white"></i>评论<i class="icon-circle"></i></p>
+		<div id="sub_comment_box">
+		<p data-id="received_comment"><span  class="sub_main_btn">收到的回复</span></p>
+		<p data-id="sended_comment"><span  class="sub_main_btn">发出的评论</span></p>		
+		</div>
+		<p data-id="fav" class="main_panel_bottom"><i class="icon-heart icon-white"></i>收藏（<span id="main_fav_count">{{$user.fav_count}}</span>）<i class="icon-circle"></i></p>
+		</div>
+		<div class="palette palette-info">
+		<a id ="main_share_btn" class="btn btn-block btn-large btn-info" href="javascript:void(0)"><strong><i class="weibo_logo"></i>分享"搬微博"</strong></a>
+		</div>
+		{{if $people}}
+		<div class="palette palette-firm" ><p class="main_reco_head"><i class="icon-th icon-white"></i> 人物推荐</p>	
+		{{foreach from=$people item=item}}
+		<div class="main_reco_div">
+		<a href="{{$base_url}}{{$item.screen_name}}" ><img data-toggle="tooltip" title="{{if $item.intro}}{{$item.intro}}{{elseif $item.whatsit}}{{$item.whatsit}}{{else}}{{$desciption}}{{/if}}"  class="img-circle" src="{{$item.profile_image_url_128}}"/></a>
+		<p><a href="{{$base_url}}{{$item.screen_name}}" >{{$item.name}}</a></p>
+		</div>
+		{{/foreach}}
+		</div>
+		{{/if}}
+		<div class="small_footer palette-clouds"><span><a href="{{$base_url}}about.html" title="关于本站">关于本站</a></span><span><a href="{{$base_url}}api.html" title="api合作">api合作</a></span><span><a href="{{$base_url}}suggest.html" title="意见和建议">意见建议</a></span>
+		<p>沪ICP备11035920号-3</p>
+		</div>
+		</div>
+		<div class="span9" id="right_content">
+		{{if $count gt 0 }}
+		<div id="main_feed_selector"><a href="javascript:void(0)" class="active btn disabled btn_follow"><i class="icon_twitter icon-white"></i>推特</a> <a href="javascript:void(0)" class="btn btn-danger btn_follow"><i class="icon-globe icon-white"></i>圈子</a></div>
+		<div class='newsfeed' id="newsfeed">	
+		{{include file='ajax/feed_ajax.tpl'}}
+		</div>
+		{{if $count eq $pagesize}}
+		<div class="feed_loading">加载中<img src="{{$base_url}}img/loading-small.gif"></div>
+		{{/if}}
+		{{else}}
+		<div class="tile">
+            <img class="tile-image big-illustration" alt="" src="images/illustrations/compass.png">
+            <h3 class="tile-title">hi，你好！{{$user.weibo_uname}}</h3>
+            <p>您还没有关注任何twitter名人，快去关注感兴趣的人吧 <span class="fui-heart-24"></span></p>
+            <br>
+            <a class="btn btn-primary btn-large btn-block" href="{{$base_url}}select/">Gooooo</a>
+          </div>
+		{{/if}}
+		</div>
+</div>
+</div>
+<script type="text/javascript">
+var modules = [{{if $count == $pagesize}}'feed',{{/if}}'feed_func','main'];
+var if_homeline = 1;
+var page = 1;
+$(".main_reco_div img").tooltip();
+</script>
+{{include file='footer.tpl'}}

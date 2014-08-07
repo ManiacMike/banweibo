@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wb="http://open.weibo.com/wb">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<title>搬微博，banweibo，最新的明星资讯，日韩明星，美剧明星，体育明星</title>
+    <link rel="shortcut icon" href="http://25.media.tumblr.com/avatar_2c78040ac84a_16.png" />
+    <link rel="apple-touch-icon" href="http://25.media.tumblr.com/avatar_2c78040ac84a_128.png"/>
+	<link href="http://banweibo.com/css/common.css?20130717" rel="stylesheet"/>
+	<script type="text/javascript" src="http://banweibo.com/js/jquery.latest.js"></script>
+	<script type="text/javascript" src="http://banweibo.com/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+	<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body><div class="container">
+	<div class="navbar navbar-fixed-top navbar-inverse">
+	  <div class="navbar-inner" id="top_nav_div">
+	  	<div class="container">
+	    <a class="brand" href="http://banweibo.com/index/"><img src="http://banweibo.com/img/logo/logo_black.jpg"></a>
+	    <ul class="nav" id="top_nav">
+	      <li class="active"><a href="http://banweibo.com/index/" title="主页">主页 <i class="icon-nav-home icon-nav"></i></a></li>
+	      <li><a href="http://banweibo.com/select/" title="人物列表">人物 <i class="icon-nav-list icon-nav"></i></a></li>
+	      <li><a href="http://banweibo.com/hot/" title="热门微博">热门 <i class="icon-nav-fire icon-nav"></i></a></li>
+	      <li><a href="http://banweibo.com/search/" title="搜索">搜索 <i class="icon-nav-search icon-nav"></i></a></li>  	  
+	  	   </ul>
+	  	   <ul class="nav" id="sub_nav">
+	  	  	        <li data-toggle="tooltip" title="登陆"  data-placement="bottom"><a href="#login_modal"  role="button" data-toggle="modal"><i  class="icon-nav-user icon-nav"></i></a></li>
+	            
+	  	   <li id="nav_fav_icon" data-toggle="tooltip"  title="收藏本站"  data-placement="bottom"><a  href="javascript:void(0)"><i class="icon-nav-star icon-nav"></i></a></li>
+	  	   <li data-toggle="tooltip" title="官方微博"  data-placement="bottom"><a href="http://weibo.com/u/3436468640"  rel="nofollow" target="_blank"><i class='weibo_logo'></i></a></li>
+	  	   <li data-toggle="tooltip" title=""  data-placement="bottom"><a href="javascript:void(0)"  id="toggle_sound_btn"><i class='icon-sound'></i></a></li>
+	      </li>
+		</ul>
+	  </div>
+	</div>
+	</div>
+<div id="login_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">请先登陆哦</h3>
+  </div>
+  <div class="modal-body">
+    <a class="btn btn-primary btn-large login_modal_btn" href="https://api.weibo.com/oauth2/authorize?client_id=2885675204&redirect_uri=http://banweibo.com/login/callback/dash_code/&response_type=code"><i class="weibo_logo"></i>用新浪微博账户登陆</a>
+  </div>
+</div>
+<a href="javascript:void(0);"><div id="back-top" class="palette palette-silver"><img src="http://banweibo.com/img/space_art.png"/></div></a>		<div class="midline index_midline"></div>
+		<div class="pic_wall_container house_bg">
+			<p class="pic_wall_notice"><i class="icon-volume-down"></i>我们的官方微博<a href="http://weibo.com/u/3436468640" title="搬微博" target="_blank"> 搬微博<i class="weibo_logo_red" style="float:none;"></i></a></p>
+						<div class="pic">
+			<div class="select_img_bg">
+				<a href="http://banweibo.com/IBGDRGN"><img src="http://a0.twimg.com/profile_images/2481673887/image_reasonably_small.jpg"></a>
+				</div>
+				<p class="pic_p1">G-DRAGON&nbsp<i class="icon_verified"></i></p>
+				<p class="pic_p"><strong>权志龙</strong></p>
+				<p class="pic_p"><abbr title="韩国偶像组合BigBang队长">韩国偶像组合BigB...</abbr></p>
+				<a class="btn btn-danger btn_follow"  href="#login_modal"  role="button"  data-toggle="modal">
+                <i class="icon-plus icon-white"></i> 关注
+                </a>
+			</div>
+						<div class="pic">
+			<div class="select_img_bg">
+				<a href="http://banweibo.com/Khunnie0624"><img src="http://a0.twimg.com/profile_images/3266240663/1d467f3121051f640325650316a80647_reasonably_small.jpeg"></a>
+				</div>
+				<p class="pic_p1"><abbr title="นิชคุณ Buck หรเวชกุล">นิชคุ...</abbr>&nbsp<i class="icon_verified"></i></p>
+				<p class="pic_p"><strong>尼坤</strong></p>
+				<p class="pic_p"><abbr title="韩国男子组合2PM成员">韩国男子组合2PM...</abbr></p>
+				<a class="btn btn-danger btn_follow"  href="#login_modal"  role="button"  data-toggle="modal">
+                <i class="icon-plus icon-white"></i> 关注
+                </a>
+			</div>
+						<div class="pic">
+			<div class="select_img_bg">
+				<a href="http://banweibo.com/donghae861015"><img src="http://a0.twimg.com/profile_images/1748394726/image_reasonably_small.jpg"></a>
+				</div>
+				<p class="pic_p1"><abbr title="Super Junior 이동해">Super Juni...</abbr>&nbsp<i class="icon_verified"></i></p>
+				<p class="pic_p"><strong>东海</strong></p>
+				<p class="pic_p"><abbr title="韩国男子组合Super Junior成员">韩国男子组合Supe...</abbr></p>
+				<a class="btn btn-danger btn_follow"  href="#login_modal"  role="button"  data-toggle="modal">
+                <i class="icon-plus icon-white"></i> 关注
+                </a>
+			</div>
+						<div class="pic">
+			<div class="select_img_bg">
+				<a href="http://banweibo.com/ryeong9"><img src="http://a0.twimg.com/profile_images/3596300197/42542dee05351da55b8a96d3f81eab4d_reasonably_small.png"></a>
+				</div>
+				<p class="pic_p1">Ryeo Wook&nbsp<i class="icon_verified"></i></p>
+				<p class="pic_p"><strong>厉旭</strong></p>
+				<p class="pic_p"><abbr title="韩国男子组合Super Junior成员">韩国男子组合Supe...</abbr></p>
+				<a class="btn btn-danger btn_follow"  href="#login_modal"  role="button"  data-toggle="modal">
+                <i class="icon-plus icon-white"></i> 关注
+                </a>
+			</div>
+						<div class="pic">
+			<div class="select_img_bg">
+				<a href="http://banweibo.com/siwon407"><img src="http://a0.twimg.com/profile_images/3351864373/3b902d5755cb536d8fd9dc1f39dbb577_reasonably_small.jpeg"></a>
+				</div>
+				<p class="pic_p1">SIWON CHOI&nbsp<i class="icon_verified"></i></p>
+				<p class="pic_p"><strong>崔始源</strong></p>
+				<p class="pic_p"><abbr title="韩国男子组合Super Junior成员">韩国男子组合Supe...</abbr></p>
+				<a class="btn btn-danger btn_follow"  href="#login_modal"  role="button"  data-toggle="modal">
+                <i class="icon-plus icon-white"></i> 关注
+                </a>
+			</div>
+									<div class="pic">
+			<div class="select_img_bg">
+				<a href="http://banweibo.com/CoryMonteith"><img src="https://si0.twimg.com/profile_images/1428735085/image_reasonably_small.jpg"></a>
+				</div>
+				<p class="pic_p1"><abbr title="Cory Monteith">Cory Monte...</abbr>&nbsp<i class="icon_verified"></i></p>
+				<p class="pic_p"><strong>科里·蒙蒂思</strong></p>
+				<p class="pic_p"><abbr title="《欢乐合唱团》已故男主角。Cory RIP.">《欢乐合唱团》已...</abbr></p>
+				<a class="btn btn-danger btn_follow"  href="#login_modal"  role="button"  data-toggle="modal">
+                <i class="icon-plus icon-white"></i> 关注
+                </a>
+			</div>
+						<div class="pic">
+			<div class="select_img_bg">
+				<a href="http://banweibo.com/adamlambert"><img src="https://si0.twimg.com/profile_images/3444601806/c410aee8eb3a8a6989639ab2c7797d8a_reasonably_small.jpeg"></a>
+				</div>
+				<p class="pic_p1"><abbr title="Adam Lambert">Adam Lambe...</abbr>&nbsp<i class="icon_verified"></i></p>
+				<p class="pic_p"><strong>亚当·兰伯特</strong></p>
+				<p class="pic_p">美国流行男歌手</p>
+				<a class="btn btn-danger btn_follow"  href="#login_modal"  role="button"  data-toggle="modal">
+                <i class="icon-plus icon-white"></i> 关注
+                </a>
+			</div>
+						<div class="pic">
+			<div class="select_img_bg">
+				<a href="http://banweibo.com/FortuneMagazine"><img src="https://si0.twimg.com/profile_images/1017887593/Fortune_Icon_57x57_reasonably_small.png"></a>
+				</div>
+				<p class="pic_p1"><abbr title="Fortune Magazine">Fortune Ma...</abbr>&nbsp<i class="icon_verified"></i></p>
+				<p class="pic_p">20779条微博</p>
+				<p class="pic_p">暂无介绍</p>
+				<a class="btn btn-danger btn_follow"  href="#login_modal"  role="button"  data-toggle="modal">
+                <i class="icon-plus icon-white"></i> 关注
+                </a>
+			</div>
+						<div class="pic">
+			<div class="select_img_bg">
+				<a href="http://banweibo.com/google"><img src="https://si0.twimg.com/profile_images/2504370963/6u5qf6cl9jtwew6poxcj_reasonably_small.png"></a>
+				</div>
+				<p class="pic_p1">A Googler&nbsp<i class="icon_verified"></i></p>
+				<p class="pic_p">4359条微博</p>
+				<p class="pic_p">google官方twitter</p>
+				<a class="btn btn-danger btn_follow"  href="#login_modal"  role="button"  data-toggle="modal">
+                <i class="icon-plus icon-white"></i> 关注
+                </a>
+			</div>
+						<div class="pic">
+			<div class="select_img_bg">
+				<a href="http://banweibo.com/KevinSpacey"><img src="https://si0.twimg.com/profile_images/114075583/Picture_4_reasonably_small.png"></a>
+				</div>
+				<p class="pic_p1"><abbr title="Kevin Spacey">Kevin Spac...</abbr>&nbsp<i class="icon_verified"></i></p>
+				<p class="pic_p"><strong>凯文·史派西</strong></p>
+				<p class="pic_p">奥斯卡最佳男主角</p>
+				<a class="btn btn-danger btn_follow"  href="#login_modal"  role="button"  data-toggle="modal">
+                <i class="icon-plus icon-white"></i> 关注
+                </a>
+			</div>
+						<p class="pic_wall_morelink"> <a href="http://banweibo.com/select/" class="btn btn-large btn-primary"><i class="icon-th icon-white"></i> 查看更多人物</a></p>
+		</div>
+		<!--  
+		<div class="row">
+		<div class='span3'>
+		<div class="palette-firm-dark index_left">
+		<p>信息与twitter实时同步</p>
+		<p>可一键转发至新浪微博</p>
+		</div>
+		<div class="small_footer palette-clouds"><span><a href="http://banweibo.com/about.html" title="关于本站">关于本站</a></span><span><a href="http://banweibo.com/api.html" title="api合作">api合作</a></span><span><a href="http://banweibo.com/suggest.html" title="意见和建议">意见建议</a></span>
+		<p>沪ICP备11035920号-3</p>
+		</div>
+		</div>
+		<div class='span9'>
+		<div class='newsfeed' id="newsfeed">	
+			
+		</div>
+				</div>
+	</div>
+	-->
+</div>
+<script type="text/javascript">
+$("body").css({
+    "background": "url(http://a0.twimg.com/profile_background_images/38950068/background.jpg)"
+  });
+$(".pic_wall_container").removeClass("house_bg").removeClass("pic_wall_container").css("margin-top","70px");
+$(".index_midline").hide();
+</script>
+<script type="text/javascript" src="http://banweibo.com/js/st.js"></script>
+<script type="text/javascript" src="http://banweibo.com/js/common.js?20130627"></script>
+<div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="span7">
+            <h3 class="footer-title">意见和建议</h3>
+            <p>搬微博收集和搬运各类名人的资讯
+            </p>
+            <p>如果您对产品有任何意见和建议请发email至banweibo@gmail.com
+            </p>
+            <p>© 2013 banweibo.com, all rights reserved. </p><p>Designed and made by Maniac Mike.</p>
+          </div> <!-- /span8 -->
+
+          <div class="span5">
+            <div class="footer-banner">
+              <h3 class="footer-title">关于我们</h3>
+              <ul>
+                <li>本站的数据来源于网络，不含政治信息</li>
+                <li>本站不对站内数据负责</li>           
+                <li>如果本站数据有违规，请联系我们</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 沪ICP备11035920号-3 -->
+    <div id="YOUDAO_SELECTOR_WRAPPER" style="display:none; margin:0; border:0; padding:0; width:320px; height:240px;"></div>
+<script type="text/javascript" src="http://fanyi.youdao.com/openapi.do?keyfrom=banweibo&key=1847516615&type=selector&version=1.0&translate=on" charset="utf-8"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-41114134-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html><!-- cached -->
